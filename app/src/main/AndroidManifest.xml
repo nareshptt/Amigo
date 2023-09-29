@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Amigo"
+        tools:targetApi="31">
+        <activity
+            android:name=".SiimplelistviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".floatingactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimepickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatapickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckboxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RattingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RadiobuttonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".spinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImplicityintentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashbordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
